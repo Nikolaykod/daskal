@@ -1,0 +1,177 @@
+body{
+	margin: 0;
+	padding: 0;
+    font-family: sans-serif;
+}
+.responsive-bar{
+    display: none;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 9vh;
+    padding: 1vh 1vh;
+    box-sizing: border-box;
+    transition: .5s;
+    background: rgba(0,0,0,1);
+
+}
+nav.black{
+    background: rgba(0,0,0,1);
+    height: 8vh;
+    padding: 1vh 1vh;
+}
+.Buycard.black{
+    color: #000000;
+}
+nav .logo{
+    float: left;
+    padding-right: 9vw;
+  padding-left: 4vh;
+}
+
+nav .logo img{
+    height: 7vh;
+    transition: .5s;
+}
+nav.black .logo img{
+    height: 60px;
+}
+nav > ul{
+    width: 70%;
+    margin: 0 auto;
+    padding: 0;
+    float: left;
+}
+nav > ul > li{
+    list-style: none;
+    display: inline-block;
+}
+
+nav > ul > li > a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase; 
+    line-height: 7vh;
+    padding:1vh 3vh;
+    transition: .5s;   
+}
+.logo{
+  padding-right: 3vh;
+}
+.Buycard{
+  text-decoration: none;
+  font-size: medium;
+  color: #000000;
+
+  font-weight: bolder;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 7vh;
+  padding: 1vh;
+  background-color:#fc8c6c;
+}
+.buycard-box{
+    margin-left: 25vh;
+}
+.navtext{
+  font-size: medium;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200;
+}
+nav.black > ul > li > a{
+    color: #fff;
+    line-height: 60px;
+}
+
+.pulse {
+    animation:pulse-animation 2s infinite;
+  }
+  
+  @keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px rgba(255, 0, 0, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgba(255, 0, 0, 0);
+    }
+  }
+  
+  
+
+@media(max-width:768px){
+    .responsive-bar{
+        display: block;
+        width: 100%;
+        height: 60px;
+        background: #000000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 5px 20px;
+        box-sizing: border-box;
+        z-index: 1;
+    }
+    .responsive-bar .logo img{
+        float: left;
+        height: 50px;  
+    }
+    .responsive-bar .menu h4{
+        float: right;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        line-height: 50px;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    nav{
+        padding: 0;
+    }
+    nav,
+    nav.black{
+    background: #262626;
+    height: 60px;
+    padding: 0;
+    }
+    nav .logo{
+        display: none;
+    }
+    nav ul{
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        background: #262626;
+        float: none;
+        display: none;
+    }
+    nav ul.active{
+        display: block;
+    }
+    nav ul li{
+        width: 100%;
+    }
+    nav ul li a{
+        display: block;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        line-height: 30px !important;
+        color: #fff;
+        
+    }
+
+    nav > ul{
+        width: 100%;
+        display: none;
+    }
+    nav > ul > li{
+        display: block;
+        text-align: center;
+    }
+    .active{
+        display: block;
+    }
+}
