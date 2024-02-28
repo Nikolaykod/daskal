@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.bg-first{
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+     url(/img/explosion.jpg) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    
+    height: 74vh;
+}
+/* TITLE */
+
+.t1{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 47vh;
+}
+.titt{
+    color: white;
+    text-align: center;
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+.title1{
+    font-size: 10vh;
+    font-weight: 400;
+    font-style: bold;
+}
+.title2{
+    font-size: 5vh;
+    font-weight: 400;
+    margin-bottom: 10vh;
+}
+
+/* BG 
+  BOXES
+*/
+
+.color-text{
+    color:#fc8c6c;
+    margin: 0;
+}
+.text-box{
+    margin: auto;
+    font-family: "Abel", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 2vh;
+ }
+.box-page{
+    display: flex;   
+    padding: 0;
+    width: 16.66%;
+    height: 27vh;
+}
+.boxinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 0;
+}
+.big-text{
+font-size: 4vh;
+}
+.gray{
+    background-color:rgb(24, 24, 24) ;
+}
+.blacks{
+    background-color:rgb(0, 0, 0) ;
+}
+
+/* CLUB BOX */
+.bg-second{
+    width: 100%;
+    height: 1150vh;
+    background-color: brown;
+    margin: 0;
+}
+.club-box{
+    height: 50vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 12vh;
+
+}
+.lk{
+    text-decoration: none;
+    color: black;
+}
+.titl{
+    font-family: "Abel", sans-serif;
+font-weight: 100;
+    font-size: 4vh;
+
+}
+.text-img{
+    margin-left: 2vh;
+display: flex;
+justify-self: start;
+flex-direction: column;
+
+}
+.buttona{
+    padding: 1.25vh;
+    width: 18%;
+    font-family: "Abel", sans-serif;
+    font-weight: 800;
+    font-size: 1.8vh;
+    color: #fc8c6c;
+    text-align: center;
+    }
+.buttona:hover{
+padding: 1.25vh;
+width: 18%;
+font-family: "Abel", sans-serif;
+font-weight: 800;
+font-size: 1.8vh;
+background-color: #fc8c6c;
+color: white;
+text-align: center;
+transition: 0.5s;
+}
+.text-club{
+    font-family: "Abel", sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: 1000;
+    font-size: 2vh;
+    margin: 1.5vh;
+}
+.img{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    height: fit-content;
+    width: fit-content;
+    margin: 0;
+}
+.img1{
+    width:100%;
+    height: 38vh;
+    margin-right: 1vh;
+}
+.big-num{
+transform: translate(5vh,-25vh);
+font-size: 6.6vh;
+color: white;
+font-family: 'Times New Roman', Times, serif;
+}
